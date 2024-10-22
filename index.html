@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Rating App</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app" class="container">
+    <h1>Product Ratings</h1>
+    <form id="product-form">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input type="number" class="form-control" id="id" required>
+      </div>
+      <div class="mb-3">
+        <label for="rating" class="form-label">Rating</label>
+        <input type="number" class="form-control" id="rating" required>
+      </div>
+      <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <input type="text" class="form-control" id="status" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <input type="text" id="search-status" class="form-control mt-4" placeholder="Search by status">
+    <input type="number" id="search-id" class="form-control mt-2" placeholder="Search by ID">
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>ID</th>
+          <th>Rating</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-table-body">
+      </tbody>
+    </table>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
